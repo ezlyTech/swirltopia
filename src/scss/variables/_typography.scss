@@ -1,0 +1,78 @@
+/*FONT FAMILIES*/
+$font-regular: "Barlow Regular", Arial, sans-serif;
+$font-italic: "Barlow Italic", Arial, sans-serif;
+$font-thin: "Barlow Thin";
+$font-thin-italic: "Barlow Thin Italic", Arial, sans-serif;
+$font-extralight: "Barlow ExtraLight", Arial, sans-serif;
+$font-extralight-italic: "Barlow ExtraLight Italic", Arial, sans-serif;
+$font-light: "Barlow Light", Arial, sans-serif;
+$font-light-italic: "Barlow Light Italic", Arial, sans-serif;
+$font-medium: "Barlow Medium", Arial, sans-serif;
+$font-medium-italic: "Barlow Medium Italic", Arial, sans-serif;
+$font-semibold: "Barlow SemiBold", Arial, sans-serif;
+$font-semibold-italic: "Barlow SemiBold Italic", Arial, sans-serif;
+$font-bold: "Barlow Bold", Arial, sans-serif;
+$font-bold-italic: "Barlow Bold Italic", Arial, sans-serif;
+$font-extrabold: "Barlow ExtraBold", Arial, sans-serif;
+$font-extrabold-italic: "Barlow ExtraBold Italic", Arial, sans-serif;
+$font-black: "Barlow Black", Arial, sans-serif;
+$font-black-italic: "Barlow Black Italic", Arial, sans-serif;
+
+/** text classes **/
+.text-extralarge {
+    font-family: $font-regular;
+    font-size: 24px;
+    line-height: 32px;
+    @include media('>tablet') { 
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
+.text-large {
+    font-family: $font-regular;
+    font-size: 20px;
+    line-height: 28px;
+    @include media('>tablet') { 
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+.text-small {
+    font-family: $font-regular;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.text-extrasmall {
+    font-family: $font-regular;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.text-tiny {
+    font-family: $font-regular;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.subtext {
+    font-family: $font-bold;
+    font-size: 18px;
+    line-height: 24px;
+    @include media('>tablet') { 
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+.quote {
+    font-family: $font-bold;
+    font-size: 32px;
+    line-height: 40px;
+    @include media('>tablet') { 
+        font-size: 64px;
+        line-height: 72px;
+    }
+}

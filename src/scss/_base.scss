@@ -1,0 +1,196 @@
+@import 'variables/colors';
+@import 'variables/typography';
+
+/* GENERAL COMPONENTS */
+
+
+/*Utilities*/
+@import 'utilities/fonts';
+
+/* PARTIAL COMPONENTS */
+@import "partials/test";
+
+/*! critical:start */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  text-decoration: none;
+  color: inherit;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+  font-family: $font-regular;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+button {
+  -webkit-appearance: none;
+  border-radius: 0;
+  text-align: inherit;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  color: inherit;
+  font: inherit;
+}
+
+/*FORMAT*/
+h1, h2, h3, h4, h5, h6, p {
+  color: $color-secondary;
+}
+h1, .h1 {
+  font-family: $font-bold;
+  font-size: 48px;
+  line-height: 56px;
+
+  @include media('>tablet') { 
+    font-size: 64px;
+    line-height: 72px;
+  }
+}
+
+h2, .h2 {
+  font-family: $font-bold;
+  font-size: 32px;
+  line-height: 40px;
+
+  @include media('>tablet') { 
+    font-family: $font-bold;
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+h3, .h3 {
+  font-family: $font-bold;
+  font-size: 24px;
+  line-height: 32px;
+
+  @include media('>tablet') { 
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+h4, .h4 {
+  font-family: $font-bold;
+  font-size: 20px;
+  line-height: 24px;
+
+  @include media('>tablet') { 
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+h5, .h5, h6 {
+  font-family: $font-bold;
+  font-size: 18px;
+  line-height: 24px;
+
+  @include media('>tablet') { 
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+p {
+  font-family: $font-regular;
+  font-size: 18px;
+  line-height: 24px;
+  @include media('>tablet') { 
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+strong, b {
+  font-family: $font-bold;
+}
+
+i, em {
+  font-family: $font-italic;
+}
+
+strong+i, strong+em, b+i, b+em, i+strong, em+strong, i+b, em+b {
+  font-family: $font-bold-italic;
+}
+
+a {
+  color: $color-primary;
+  cursor: pointer;
+}
+
+.inner-container {
+  max-width: 87.2vw;
+  margin: 0 auto;
+  @include media('>laptop') { 
+    max-width: 91.1vw;
+  }
+  @include media('>desktop') { 
+    max-width: 77.2vw;
+  }
+}
+
+.has-padding__top {
+  padding-top: 96px;
+}
+
+.has-padding__bottom {
+  padding-bottom: 96px;
+}
+
+main {
+  position: relative;
+}
+
+.theme--gray {
+  background-color: $color-lightgrey;
+}
+
+.theme--red {
+  background-color: $color-secondary;
+  color: $color-white;
+}
+
+.theme--white {
+  background-color: $color-white;
+}
+/*! critical:end */

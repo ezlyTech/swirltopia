@@ -1,0 +1,144 @@
+%svg-common {
+    background: url("../assets/images/sprite/sprite-5c7dd83c.svg") no-repeat;
+}
+
+.svg-arrow-down-icon {
+    @extend %svg-common;
+    background-position: 100% 0;
+}
+
+.svg-arrow-down-icon-dims {
+    width: 13px;
+    height: 12px;
+}
+
+.svg-arrow-right {
+    @extend %svg-common;
+    background-position: 0 57.142857142857146%;
+}
+
+.svg-arrow-right-dims {
+    width: 13px;
+    height: 24px;
+}
+
+.svg-arrowdown-icon {
+    @extend %svg-common;
+    background-position: 0 0;
+}
+
+.svg-arrowdown-icon-dims {
+    width: 32px;
+    height: 32px;
+}
+
+.svg-burger-icon {
+    @extend %svg-common;
+    background-position: 16.883116883116884% 57.142857142857146%;
+}
+
+.svg-burger-icon-dims {
+    width: 24px;
+    height: 24px;
+}
+
+.svg-close-icon {
+    @extend %svg-common;
+    background-position: 39.50617283950617% 17.9%;
+}
+
+.svg-close-icon-dims {
+    width: 20px;
+    height: 20px;
+}
+
+.svg-exit-icon {
+    @extend %svg-common;
+    background-position: 48.05194805194805% 57.142857142857146%;
+}
+
+.svg-exit-icon-dims {
+    width: 24px;
+    height: 24px;
+}
+
+.svg-fb-icon {
+    @extend %svg-common;
+    background-position: 57.142857142857146% 17.9%;
+}
+
+.svg-fb-icon-dims {
+    width: 10px;
+    height: 20px;
+}
+
+.svg-ig-icon {
+    @extend %svg-common;
+    background-position: 83.11688311688312% 0;
+}
+
+.svg-ig-icon-dims {
+    width: 24px;
+    height: 24px;
+}
+
+.svg-in-icon {
+    @extend %svg-common;
+    background-position: 83.11688311688312% 42.857142857142854%;
+}
+
+.svg-in-icon-dims {
+    width: 24px;
+    height: 24px;
+}
+
+.svg-login-icon {
+    @extend %svg-common;
+    background-position: 73.5632183908046% 87.5%;
+}
+
+.svg-login-icon-dims {
+    width: 14px;
+    height: 16px;
+}
+
+.svg-logo {
+    @extend %svg-common;
+    background-position: 46.3768115942029% 0;
+}
+
+.svg-logo-dims {
+    width: 32px;
+    height: 10.74px;
+}
+
+.svg-playbutton {
+    @extend %svg-common;
+    background-position: 0 100%;
+}
+
+.svg-playbutton-dims {
+    width: 20px;
+    height: 24px;
+}
+
+.svg-search-icon {
+    @extend %svg-common;
+    background-position: 54.32098765432099% 93.33333333333333%;
+}
+
+.svg-search-icon-dims {
+    width: 20px;
+    height: 20px;
+}
+
+.svg-yt-icon {
+    @extend %svg-common;
+    background-position: 25.974025974025974% 100%;
+}
+
+.svg-yt-icon-dims {
+    width: 24px;
+    height: 24px;
+}
+
