@@ -1,0 +1,23 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    border: 2px solid $color-primary;
+    border-radius: 999px;
+
+    &__text {
+        font-size: 16px;
+
+        @include media('>tablet') { 
+            font-size: 32px;
+        }
+    }
+
+    &__icon {
+        margin-left: 14px;
+        svg {
+            width: 22px;
+        }
+    }
+}

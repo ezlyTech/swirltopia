@@ -1,0 +1,19 @@
+<a href="@@if(copy.url != '') {@@copy.url}" 
+class="btn 
+@@if(modifiers != '') {@@modifiers} 
+@@if(type == 'primary') {btn__primary} 
+@@if(type == 'secondary') {btn__secondary} 
+@@if(size == 'large' && copy.text != '') {btn--large} 
+@@if(size == 'medium' && copy.text != '') {btn--medium} 
+@@if(size == 'small' && copy.text != '') {btn--small}" @@attr>
+    @@if(copy.text != "" ) {
+        <span class="btn__text">@@copy.text</span>
+    }
+    @@if(has_icon == true) {
+        <span class="btn__icon">
+            @@if(type == 'primary' || type == 'secondary') {
+                <svg role="image" title="line"><use href="assets/images/sprite.svg#arrow-icon"/></svg>
+            }
+        </span>
+    }
+</a>
