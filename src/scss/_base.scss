@@ -40,7 +40,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-  font-family: $font-regular;
+  font-family: 'Barlow Condensed', sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6, p {
   color: $color-secondary;
 }
 h1, .h1 {
-  font-family: $font-bold;
+  font-family: 'Paytone One', sans-serif;
   font-size: 48px;
   line-height: 56px;
 
@@ -87,19 +87,19 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-family: $font-bold;
+  font-family: 'Paytone One', sans-serif;
   font-size: 32px;
   line-height: 40px;
 
   @include media('>tablet') { 
-    font-family: $font-bold;
+    font-family: 'Paytone One', sans-serif;
     font-size: 48px;
     line-height: 56px;
   }
 }
 
 h3, .h3 {
-  font-family: $font-bold;
+  font-family: 'Paytone One', sans-serif;
   font-size: 24px;
   line-height: 32px;
 
@@ -110,7 +110,7 @@ h3, .h3 {
 }
 
 h4, .h4 {
-  font-family: $font-bold;
+  font-family: 'Paytone One', sans-serif;
   font-size: 20px;
   line-height: 24px;
 
@@ -121,7 +121,7 @@ h4, .h4 {
 }
 
 h5, .h5, h6 {
-  font-family: $font-bold;
+  font-family: 'Paytone One', sans-serif;
   font-size: 18px;
   line-height: 24px;
 
@@ -132,7 +132,7 @@ h5, .h5, h6 {
 }
 
 p {
-  font-family: $font-regular;
+  font-family: 'Barlow Condensed', sans-serif;
   font-size: 18px;
   line-height: 24px;
   @include media('>tablet') { 
@@ -142,15 +142,19 @@ p {
 }
 
 strong, b {
-  font-family: $font-bold;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
 }
 
 i, em {
-  font-family: $font-italic;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-style: italic;
 }
 
 strong+i, strong+em, b+i, b+em, i+strong, em+strong, i+b, em+b {
-  font-family: $font-bold-italic;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-style: italic;
+  font-weight: 700;
 }
 
 a {
@@ -182,7 +186,7 @@ main {
 }
 
 .theme--gray {
-  background-color: $color-lightgrey;
+  background-color: $color-grey;
 }
 
 .theme--red {

@@ -2,30 +2,22 @@
 $color-white: #FFFFFF;
 $color-black: #000000;
 //Pink
-$color-primary : #E40070;
-$color-primary-tint : #E9338D;
-$color-primary-shade : #B6005A;
-$color-primary-dark: #890043;
-//Bordeaux
-$color-secondary : #620028;
-$color-secondary-tint : #813353;
-$color-secondary-shade : #4E0020;
-$color-secondary-dark: #140008;
+$color-primary : #B24DC2;
+$color-primary-dark: #A031B2;
+//Brown
+$color-secondary : #373737;
+//Green
+$color-green : #62F5DB;
+$color-green-light : #D3FFF7;
+//Yellow
+$color-yellow : #FCCF88;
+$color-yellow-light : #FFE8C5;
+//Yellow
+$color-red : #FFC9BE;
+$color-red-light : #FFE1DB;
 //Grey
-$color-grey : #DCDCDC;
-$color-grey-20 : #797979;
-$color-grey-40 : #9B9B9B;
-$color-grey-80 : #DCDCDC;
+$color-grey : #F8F8F8;
 
-$color-lightgrey: #F0F0F0;
-$color-lightgrey90 : #EEEEEE;
-$color-lightgrey-95 : #F7F7F7;
-
-$color-darkgrey : #464646; // grey 20 shade
-$color-darkgrey-40 : #353535;
-$color-darkgrey-80 : #121212;
-$color-dark: #111F09;
-$color-dark-2: #110109;
 
 /** Background classes **/
 .bg-white {
@@ -40,10 +32,6 @@ $color-dark-2: #110109;
     background-color: $color-secondary;
 }
 
-.bg-lightgrey {
-    background-color: $color-lightgrey;
-}
-
 .bg-grey {
-    background-color: $color-lightgrey90
+    background-color: $color-grey;
 }
