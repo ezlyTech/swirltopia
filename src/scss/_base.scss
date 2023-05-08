@@ -2,7 +2,7 @@
 @import 'variables/typography';
 
 /* GENERAL COMPONENTS */
-
+@import "general/button";
 
 /*Utilities*/
 @import 'utilities/fonts';
@@ -160,17 +160,6 @@ strong+i, strong+em, b+i, b+em, i+strong, em+strong, i+b, em+b {
 a {
   color: $color-primary;
   cursor: pointer;
-}
-
-.inner-container {
-  max-width: 87.2vw;
-  margin: 0 auto;
-  @include media('>laptop') { 
-    max-width: 91.1vw;
-  }
-  @include media('>desktop') { 
-    max-width: 77.2vw;
-  }
 }
 
 .has-padding__top {

@@ -5,9 +5,11 @@
     padding: 12px 20px;
     border: 2px solid $color-primary;
     border-radius: 999px;
+    width: fit-content;
 
     &__text {
         font-size: 16px;
+        color: $color-primary;
 
         @include media('>tablet') { 
             font-size: 32px;
@@ -17,7 +19,12 @@
     &__icon {
         margin-left: 14px;
         svg {
-            width: 22px;
+            width: 29px;
+            height: 10px;
         }
+    }
+
+    &:hover {
+        background-color: $color-primary-light;
     }
 }
