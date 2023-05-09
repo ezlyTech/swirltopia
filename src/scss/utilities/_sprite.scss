@@ -1,5 +1,5 @@
 %svg-common {
-    background: url("../assets/images/sprite/sprite-ec3baa5d.svg") no-repeat;
+    background: url("../assets/images/sprite/sprite-c5d620c7.svg") no-repeat;
 }
 
 .svg-arrow-icon {
@@ -10,5 +10,25 @@
 .svg-arrow-icon-dims {
     width: 32px;
     height: 9.45px;
+}
+
+.svg-footer-logo {
+    @extend %svg-common;
+    background-position: 0 99.36908517350157%;
+}
+
+.svg-footer-logo-dims {
+    width: 32px;
+    height: 14.49px;
+}
+
+.svg-header-logo {
+    @extend %svg-common;
+    background-position: 100% 0;
+}
+
+.svg-header-logo-dims {
+    width: 32px;
+    height: 14.6px;
 }
 
