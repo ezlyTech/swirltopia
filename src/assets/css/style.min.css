@@ -182,3 +182,6 @@
   src: local("Barlow Black Italic"), url("../../assets/fonts/Barlow-BlackItalic.woff") format("woff");
 }
 /* PARTIAL COMPONENTS */
+.two-column {
+  background-color: #F8F8F8;
+}

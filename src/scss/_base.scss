@@ -9,6 +9,7 @@
 
 /* PARTIAL COMPONENTS */
 @import "partials/test";
+@import "partials/two-column";
 
 /*! critical:start */
 html, body, div, span, applet, object, iframe,
@@ -168,6 +169,11 @@ a {
 
 .has-padding__bottom {
   padding-bottom: 90px;
+}
+
+.inner-container {
+  max-width: 1392px;
+  margin: 0 auto;
 }
 
 main {
