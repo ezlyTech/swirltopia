@@ -34,8 +34,51 @@
                 </div>
                 <div class="footer-texts">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat, augue ac ultricies viverra, nisl mi rutrum erat, vel molestie massa mi et purus.</p>
+                    <form action="#">
+                        @@include("input.html", {
+                            "modifiers": "",
+                            "id": "",
+                            "attr": '"',
+                            "type": "text",
+                            "size": "",
+                            "has_icon": true,
+                            "copy": {
+                                "name": "name",
+                                "placeholder": "Your name"
+                            }
+                        })
+                        @@include("input.html", {
+                            "modifiers": "",
+                            "id": "",
+                            "attr": '"',
+                            "type": "email",
+                            "size": "",
+                            "has_icon": true,
+                            "copy": {
+                                "name": "name",
+                                "placeholder": "Your email address"
+                            }
+                        })
+                        @@include("button.html", {
+                            "modifiers": "btn-white",
+                            "id": "",
+                            "attr": '"',
+                            "type": "primary",
+                            "size": "",
+                            "has_icon": true,
+                            "copy": {
+                                "text": "Subscribe",
+                                "url": "#"
+                            }
+                        })
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
+</section>
+<section class="copyright">
+    <div class="inner-container">
+        <p>© swirltopia 2023 | Poninoni</p>
     </div>
 </section>

@@ -70,6 +70,15 @@
 .btn:hover {
   background-color: #FCE8FF;
 }
+.btn.btn-white {
+  border: 2px solid #FFFFFF;
+}
+.btn.btn-white .btn__text {
+  color: #FFFFFF;
+}
+.btn.btn-white .btn__icon svg {
+  stroke: #FFFFFF;
+}
 
 .footer {
   background-color: #A031B2;
@@ -164,6 +173,87 @@
     font-size: 32px;
     line-height: 34.91px;
   }
+}
+.footer-texts form {
+  margin-top: 32px;
+}
+@media (min-width: 769px) {
+  .footer-texts form {
+    margin-top: 26px;
+  }
+}
+.footer-texts form .btn {
+  margin: 0 auto;
+  margin-top: 17px;
+}
+@media (min-width: 769px) {
+  .footer-texts form .btn {
+    margin: inherit;
+    margin-top: 26px;
+  }
+  .footer-texts form .btn .btn__text {
+    font-size: 24px;
+  }
+  .footer-texts form .btn .btn__icon svg {
+    height: 18px;
+  }
+}
+
+.copyright {
+  padding: 14px 20px;
+}
+.copyright p {
+  font-size: 14px;
+  color: #8B8B8B;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (min-width: 769px) {
+  .copyright p {
+    font-size: 16px;
+  }
+}
+
+input {
+  padding: 11px 29px;
+  border-radius: 999px;
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  width: -webkit-fill-available;
+}
+@media (min-width: 769px) {
+  input {
+    padding: 14px 29px;
+    font-size: 24px;
+  }
+}
+input + input {
+  margin-top: 10px;
+}
+input::-moz-placeholder {
+  color: #FFFFFF;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+input::placeholder {
+  color: #FFFFFF;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+@media (min-width: 769px) {
+  input::-moz-placeholder {
+    font-size: 24px;
+  }
+  input::placeholder {
+    font-size: 24px;
+  }
+}
+input:focus {
+  outline: none;
 }
 
 /*Utilities*/

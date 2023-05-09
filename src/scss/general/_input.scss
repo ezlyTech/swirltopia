@@ -1,0 +1,32 @@
+input {
+    padding: 11px 29px;
+    border-radius: 999px;
+    background-color: transparent;
+    border: 2px solid $color-white;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    width: -webkit-fill-available;
+
+    @include media('>tablet') {
+        padding: 14px 29px;
+        font-size: 24px;
+    }
+
+    & + input {
+        margin-top: 10px;
+    }
+
+    &::placeholder {
+        color: $color-white;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+
+        @include media('>tablet') {
+            font-size: 24px;
+        }
+    }
+    &:focus {
+        outline: none;
+    }
+}

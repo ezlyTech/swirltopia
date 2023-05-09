@@ -27,4 +27,17 @@
     &:hover {
         background-color: $color-primary-light;
     }
+
+    &.btn-white {
+        border: 2px solid $color-white;
+
+        .btn__text {
+            color: $color-white;
+        }
+        .btn__icon {
+            svg {
+                stroke: $color-white;
+            }
+        }
+    }
 }
