@@ -1,5 +1,5 @@
 %svg-common {
-    background: url("../assets/images/sprite/sprite-c5d620c7.svg") no-repeat;
+    background: url("../assets/images/sprite/sprite-1c338543.svg") no-repeat;
 }
 
 .svg-arrow-icon {
@@ -14,12 +14,22 @@
 
 .svg-footer-logo {
     @extend %svg-common;
-    background-position: 0 99.36908517350157%;
+    background-position: 0 22.765598650927487%;
 }
 
 .svg-footer-logo-dims {
     width: 32px;
     height: 14.49px;
+}
+
+.svg-hamburger-icon {
+    @extend %svg-common;
+    background-position: 0 99.75%;
+}
+
+.svg-hamburger-icon-dims {
+    width: 32px;
+    height: 32px;
 }
 
 .svg-header-logo {

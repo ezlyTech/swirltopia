@@ -1,0 +1,11 @@
+.header {
+    background-color: rgb(249, 249, 249);
+
+    &.has-padding__bottom {
+        padding-bottom: 134px;
+    }
+
+    &__wrapper {
+        background-color: $color-green;
+    }
+}
