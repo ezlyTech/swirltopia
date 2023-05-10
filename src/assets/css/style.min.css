@@ -378,3 +378,20 @@ input:focus {
 .two-column {
   background-color: #F8F8F8;
 }
+.two-column__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 769px) {
+  .two-column__wrapper {
+    flex-direction: row;
+  }
+}
+.two-column__copy p {
+  color: red;
+}
+@media (min-width: 769px) {
+  .two-column__copy p {
+    color: blue;
+  }
+}

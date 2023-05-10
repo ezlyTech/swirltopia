@@ -1,3 +1,22 @@
 .two-column {
     background-color: $color-grey;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+
+        @include media('>tablet') {
+            flex-direction: row;
+        }
+    }
+
+    &__copy {
+        p {
+            color: red;
+
+            @include media('>tablet') {
+                color: blue;
+            }
+        }
+    }
 }
