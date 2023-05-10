@@ -22,11 +22,23 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 </style>
 
     <!-- LOAD CSS FILES -->
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
     <link rel="preload" href="assets/css/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 </head>
 
 <body class="homepage" id="page-top">
     <main>
+        <section class="splide has-padding__bottom has-padding__top" aria-label="Splide Basic HTML Example">
+            <div class="inner-container">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">Slide 01</li>
+                        <li class="splide__slide">Slide 02</li>
+                        <li class="splide__slide">Slide 03</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
         <section class="two-column has-padding__top has-padding__bottom">
             <div class="inner-container">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, magni? Ducimus, enim ea natus nihil quo maiores doloremque cum magnam numquam labore nulla in blanditiis ad voluptatem tempore. Fugit, vel.</p>
@@ -139,6 +151,7 @@ btn__primary
 
     <!-- LOAD JAVASCRIPTS -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="assets/js/main.min.js" defer="defer"></script>
     <!-- /LOAD JAVASCRIPTS -->
 </body>
