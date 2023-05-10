@@ -381,17 +381,45 @@ input:focus {
 .two-column__wrapper {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 50px;
 }
 @media (min-width: 769px) {
   .two-column__wrapper {
     flex-direction: row;
+    gap: 170px;
   }
 }
-.two-column__copy p {
-  color: red;
+.two-column__copy {
+  width: 100%;
+}
+.two-column__copy h4 {
+  margin-bottom: 16px;
+}
+.two-column__copy .btn {
+  display: none;
+  margin-top: 50px;
 }
 @media (min-width: 769px) {
-  .two-column__copy p {
-    color: blue;
+  .two-column__copy .btn {
+    margin-top: 70px;
   }
+}
+.two-column__image {
+  width: 100%;
+}
+.two-column__image img {
+  width: 100%;
+  height: auto;
+}
+.two-column.reversed .two-column__wrapper {
+  flex-direction: column-reverse;
+}
+@media (min-width: 769px) {
+  .two-column.reversed .two-column__wrapper {
+    flex-direction: row-reverse;
+  }
+}
+.two-column.has__btn .btn {
+  display: block;
 }

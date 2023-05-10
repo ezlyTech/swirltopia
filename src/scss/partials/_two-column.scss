@@ -4,19 +4,52 @@
     &__wrapper {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        gap: 50px;
 
         @include media('>tablet') {
             flex-direction: row;
+            gap: 170px;
         }
     }
 
     &__copy {
-        p {
-            color: red;
+        width: 100%;
 
+        h4 {
+            margin-bottom: 16px;
+        }
+
+        .btn {
+            display: none;
+            margin-top: 50px;
             @include media('>tablet') {
-                color: blue;
+                margin-top: 70px;
             }
+        }
+    }
+
+    &__image {
+        width: 100%;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &.reversed {
+        .two-column__wrapper {
+            flex-direction: column-reverse;
+            @include media('>tablet') {
+                flex-direction: row-reverse;
+            }
+        }
+    }
+
+    &.has__btn {
+        .btn {
+            display: block;
         }
     }
 }

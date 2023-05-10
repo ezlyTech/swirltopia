@@ -1,15 +1,28 @@
-<section class="two-column has-padding__top has-padding__bottom">
+<section class="two-column has-padding__top has-padding__bottom 
+{@@modifiers}
+@@if(has_btn == true) {has__btn}">
     <div class="inner-container">
         <div class="two-column__wrapper">
             <div class="two-column__copy">
-                <h4>MADE FROM 100% REAl fruit!</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat, augue ac ultricies viverra, nisl mi rutrum erat, vel molestie massa mi et purus. Nam diam purus, malesuada eget auctor eget, ultrices non ante. In sed condimentum ex, vel commodo arcu. 
-                <br><br>
-                Nunc tincidunt imperdiet tellus, nec vestibulum lacus posuere vitae. Cras id urna dolor. Fusce pharetra euismod ante, eu molestie odio egestas a. Suspendisse fermentum est quam, ac convallis erat dapibus rutrum.
-                </p>
+                <h4>@@copy.title</h4>
+                <p>@@copy.content</p>
+                @@if(has_btn == true ) {
+                    @@include("../general/button.html", {
+                        "modifiers": "",
+                        "id": "",
+                        "attr": '"',
+                        "type": "primary",
+                        "size": "",
+                        "has_icon": true,
+                        "copy": {
+                            "text": "@@copy.btn_text",
+                            "url": "#"
+                        }
+                      })
+                }
             </div>
             <div class="two-column__image">
-                <img src="assets/images/square.png" alt="">
+                <img src="@@image-url" alt="">
             </div>
         </div>
     </div>
