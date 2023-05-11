@@ -423,3 +423,15 @@ input:focus {
 .two-column.has__btn .btn {
   display: block;
 }
+
+.product-heading {
+  color: #B24DC2;
+  width: 709px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.product-subtitle {
+  margin-top: 28px;
+  font-size: 48px;
+}
