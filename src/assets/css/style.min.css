@@ -462,11 +462,16 @@ input:focus {
 .faq__wrapper {
   display: flex;
   flex-direction: column;
-  gap: 170px;
+  gap: 50px;
 }
 @media (min-width: 769px) {
   .faq__wrapper {
     flex-direction: row;
-    gap: 170px;
+    gap: 80px;
   }
+}
+.faq__wrapper .image {
+  position: relative;
+  max-width: 713px;
+  border-radius: 15px;
 }
