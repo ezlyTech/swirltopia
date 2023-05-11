@@ -435,3 +435,38 @@ input:focus {
   margin-top: 28px;
   font-size: 48px;
 }
+
+.product-container {
+  display: flex;
+  margin: 200px 0;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.product-child {
+  position: relative;
+}
+
+.product-1 {
+  position: absolute;
+  left: 65px;
+  bottom: 50px;
+}
+
+.product-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: -50px;
+}
+
+.faq__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 170px;
+}
+@media (min-width: 769px) {
+  .faq__wrapper {
+    flex-direction: row;
+    gap: 170px;
+  }
+}

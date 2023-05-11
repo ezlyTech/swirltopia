@@ -1,0 +1,12 @@
+.faq{
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 170px;
+
+        @include media('>tablet') {
+            flex-direction: row;
+            gap: 170px;
+        }       
+    }
+}
