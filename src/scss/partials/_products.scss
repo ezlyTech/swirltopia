@@ -9,3 +9,30 @@
     margin-top: 28px;
     font-size: 48px;
 }
+
+.product-container{
+    display: flex;
+    margin: 200px 0;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.product-child{ 
+    position: relative;
+}
+
+.product-bg-1{
+    
+}
+
+.product-1{
+    position: absolute;
+    left: 65px;
+    bottom: 50px;
+}
+
+.product-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+}
