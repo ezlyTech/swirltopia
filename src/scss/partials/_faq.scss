@@ -10,9 +10,71 @@
         }
         
         .image{
-            position: relative;
-            max-width: 713px;
-            border-radius: 15px;
+
+            img{
+                position: relative;
+                width: 100%;
+                max-width: 713px;
+                max-height: 100%;
+            }     
+        }
+
+        .content{
+
+            .accordion{
+                padding-top: 20px;
+
+                .contentBox{
+                    position: relative;
+                    
+                    @include media('>tablet'){
+                        width: 769;
+                    }
+                    
+                    .label{
+                        position: relative;
+                        cursor: pointer;
+
+                        h5{
+                            color: #373737;
+                        }
+                        &:hover{
+
+                            h5{
+                                color: #B24DC2;
+                            }
+                        }
+                    }
+
+                    .panel{
+                        position: relative;
+                        max-width: 720px;
+                        display: none;
+                        //overflow: hidden;
+
+                        p{
+                            font-size: 24px;
+                        }
+                    }
+
+                    &.active{
+                        .label{
+                            position: relative;
+                            max-width: 729px;
+                            cursor: pointer;
+
+                            h5{
+                                color: #B24DC2;
+                            }
+                        }
+
+                        .panel{
+                            position: relative;
+                            display: block;
+                        }
+                    }
+                }
+            }
         }
     }
 }
