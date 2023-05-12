@@ -4,9 +4,13 @@ document.addEventListener('DOMContentLoaded', function() {
       var options = {};
       if (splides[i].classList.contains('herobanner-slider')) {
         options.arrows = false;
-        options.type = 'loop';
-	    options.autoplay = true;
-        options.interval = 1000;
+        options.type = 'fade';
+	      options.autoplay = true;
+        options.interval = 3000;
+        options.wheel = false;
+        options.rewind = true;
+        options.pauseOnHover = false;
+        options.pagination = false;
       }
       var splide = new Splide(splides[i], options);
       splide.mount();
