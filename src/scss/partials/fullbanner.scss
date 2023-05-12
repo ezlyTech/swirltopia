@@ -2,10 +2,17 @@
     max-width: 100%;
     height: 100%;
     position: relative;
+    .heroText {
+        position: absolute;
+        z-index: 200;
+        padding-top: 10%;
+        padding-left: 7%;
+    }
+    &__heroText{
+        
+    }
+    &__title{
+        
+    }
 }
-.full .heroText {
-    position: absolute;
-    z-index: 200;
-    padding-top: 10%;
-    padding-left: 10%;
-}
+ 
