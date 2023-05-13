@@ -1,4 +1,5 @@
 .faq{
+    
     &__wrapper{
         display: flex;
         flex-direction: column;
@@ -20,19 +21,34 @@
         }
 
         .content{
-
+            position: relative;
+            max-width: 769px;
             .accordion{
-                padding-top: 20px;
-
+                background-color: #F8F8F8;
+                max-width: 769px;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                @include media('>tablet') {
+                    flex-direction: column;
+                    gap: 10px;
+                }
                 .contentBox{
+                    max-width: 769px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
                     position: relative;
+                    background-color: #ffff;
                     
                     @include media('>tablet'){
                         width: 769;
                     }
                     
                     .label{
+                        max-width: 729px;
                         position: relative;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
                         cursor: pointer;
 
                         h5{
@@ -44,16 +60,36 @@
                                 color: #B24DC2;
                             }
                         }
+
+                        svg{
+                            position: absolute;
+                            width: 15.63px;
+                            height: 15.63px;
+                            top: 26.46%;
+                            left: 97.5%;
+                            bottom: 28.93%;
+                            transition: 0.5s;
+
+                            @include media('>tablet'){
+                                position: absolute;
+                                left: 120%;
+                            }
+                        }
                     }
 
                     .panel{
                         position: relative;
-                        max-width: 720px;
-                        display: none;
-                        //overflow: hidden;
-
+                        max-width: 725px;
+                        height: 0;
+                        overflow: hidden;
+                        transition: 0.5s;
+                        overflow-y: auto;
+                        
                         p{
-                            font-size: 24px;
+                            color: #373737;
+                            @include media('>tablet'){
+                                    font-size: 24px;
+                            }
                         }
                     }
 
@@ -66,11 +102,22 @@
                             h5{
                                 color: #B24DC2;
                             }
+
+                            svg{
+                                transform: rotate(-45deg);
+                                transition: 0.5s;
+                            }
                         }
 
                         .panel{
-                            position: relative;
-                            display: block;
+                            max-width: 725px;
+                            height: 150px;
+                            p{
+                                color: #373737;
+                                @include media('>tablet'){
+                                        font-size: 24px;
+                                }
+                            }
                         }
                     }
                 }

@@ -485,11 +485,29 @@ input:focus {
   max-width: 713px;
   max-height: 100%;
 }
+.faq__wrapper .content {
+  position: relative;
+  max-width: 769px;
+}
 .faq__wrapper .content .accordion {
-  padding-top: 20px;
+  background-color: #F8F8F8;
+  max-width: 769px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+@media (min-width: 769px) {
+  .faq__wrapper .content .accordion {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 .faq__wrapper .content .accordion .contentBox {
+  max-width: 769px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   position: relative;
+  background-color: white;
 }
 @media (min-width: 769px) {
   .faq__wrapper .content .accordion .contentBox {
@@ -497,7 +515,10 @@ input:focus {
   }
 }
 .faq__wrapper .content .accordion .contentBox .label {
+  max-width: 729px;
   position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
   cursor: pointer;
 }
 .faq__wrapper .content .accordion .contentBox .label h5 {
@@ -506,13 +527,36 @@ input:focus {
 .faq__wrapper .content .accordion .contentBox .label:hover h5 {
   color: #B24DC2;
 }
+.faq__wrapper .content .accordion .contentBox .label svg {
+  position: absolute;
+  width: 15.63px;
+  height: 15.63px;
+  top: 26.46%;
+  left: 97.5%;
+  bottom: 28.93%;
+  transition: 0.5s;
+}
+@media (min-width: 769px) {
+  .faq__wrapper .content .accordion .contentBox .label svg {
+    position: absolute;
+    left: 120%;
+  }
+}
 .faq__wrapper .content .accordion .contentBox .panel {
   position: relative;
-  max-width: 720px;
-  display: none;
+  max-width: 725px;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
 }
 .faq__wrapper .content .accordion .contentBox .panel p {
-  font-size: 24px;
+  color: #373737;
+}
+@media (min-width: 769px) {
+  .faq__wrapper .content .accordion .contentBox .panel p {
+    font-size: 24px;
+  }
 }
 .faq__wrapper .content .accordion .contentBox.active .label {
   position: relative;
@@ -522,7 +566,19 @@ input:focus {
 .faq__wrapper .content .accordion .contentBox.active .label h5 {
   color: #B24DC2;
 }
+.faq__wrapper .content .accordion .contentBox.active .label svg {
+  transform: rotate(-45deg);
+  transition: 0.5s;
+}
 .faq__wrapper .content .accordion .contentBox.active .panel {
-  position: relative;
-  display: block;
+  max-width: 725px;
+  height: 150px;
+}
+.faq__wrapper .content .accordion .contentBox.active .panel p {
+  color: #373737;
+}
+@media (min-width: 769px) {
+  .faq__wrapper .content .accordion .contentBox.active .panel p {
+    font-size: 24px;
+  }
 }
