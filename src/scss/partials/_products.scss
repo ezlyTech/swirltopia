@@ -1,38 +1,173 @@
-.product-heading{
-    color: $color-primary;
-    width: 709px;
-    text-align: center;
-    margin: 0 auto;
-}
+.product{
+    &-heading{
+        color: $color-primary;
+        text-align: center;
 
-.product-subtitle{
-    margin-top: 28px;
-    font-size: 48px;
-}
-
-.product-container{
-    display: flex;
-    margin: 200px 0;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-}
-
-.product-child{ 
-    position: relative;
-}
-
-.product-bg-1{
+        @include media('>tablet'){
+            width: 709px;
+            margin: 0 auto;
+        }
+    }
     
-}
+    &-subtitle{
+        font-size: 36px;
+        margin-top: 28px;
+        line-height: 109.1%;
 
-.product-1{
-    position: absolute;
-    left: 65px;
-    bottom: 50px;
-}
+        @include media('>tablet'){
+            font-size: 48px;
+        }
+    }
 
-.product-btn{
-    display: flex;
-    justify-content: center;
-    margin-top: -50px;
+    &-container{
+        display: none;
+
+        @include media('>tablet'){
+            display: flex;
+            margin: 200px 0;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+
+    &-children{
+        position: relative;
+    }
+
+    &-pic{
+        position: absolute;
+        left: 65px;
+        bottom: 50px;
+        transition: 500ms;
+    }
+
+    &-btn{
+        display: none;
+
+        @include media('>tablet'){
+            display: flex;
+            justify-content: center;
+            margin-top: -50px; 
+        }
+    }
+
+    &-1:hover &-pic-1, 
+    &-2:hover &-pic-2, 
+    &-3:hover &-pic-3{
+        left: -60px;
+    }
+
+    &-description{
+        visibility: visible;
+        color: #FFFFFF;
+        display: inline-block;
+        position: absolute;
+        height: 104px;
+        width: 200px;
+        font-size: 20px;
+        line-height: 109.1%;
+        left: 55px;
+        bottom: 0px;
+        opacity: 0;
+        transition: 500ms;
+        transition-delay: 100ms;
+    }
+
+    &-1:hover &-description-1, 
+    &-2:hover &-description-2, 
+    &-3:hover &-description-3{
+        visibility: visible;
+        opacity: 1;
+        bottom: 80px;
+    }
+
+    &-description-title{
+        bottom: 30px;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    &-1:hover &-description-title-1, 
+    &-2:hover &-description-title-2, 
+    &-3:hover &-description-title-3{
+    bottom: 110px;
+    opacity: 1;
+    visibility: visible;
+    }
+
+    &-slider{
+        margin: 70px auto;
+        width: 100%;
+        min-width: 335px;
+
+        @include media('>tablet'){
+            display: none;
+        }
+    }
+
+    &-slide{
+        height: 400px;
+        //position: relative;
+    }
+
+    &-slide-container{
+        width: 320px;
+        height: 370px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    &-slide-bg{
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        bottom: 20px;
+    }
+
+    &-pic-slider{
+        position: absolute;
+        bottom: 100px;
+    }
+
+    &-slider-pic{
+        width: 80px;
+        height: auto;
+        position: absolute;
+        bottom: 110px;
+        left: 0;
+    }
+
+    &-slide-title{
+        position: absolute;
+        bottom: 215px;
+        left: 80px;
+        font-size: 24px;
+        color: #FFFFFF;
+    }
+
+    &-slide-text{
+        position: absolute;
+        bottom: 120px;
+        left: 80px;
+        height: 83px;
+        width: 150px;
+        font-size: 16px;
+        line-height: 109.1%;
+        color: #FFFFFF;
+    }
+
+    &-pagination-page{
+        background-color: #F8CBFF;
+    }
+
+    &-pagination-page.is-active{
+        background-color: $color-primary;
+    }
+
+    &-pagination{
+        bottom: -2rem;
+    }
+    
 }
