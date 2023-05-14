@@ -24,7 +24,7 @@
             position: relative;
             max-width: 769px;
             .accordion{
-                background-color: #F8F8F8;
+                
                 max-width: 769px;
                 display: flex;
                 flex-direction: column;
@@ -39,7 +39,8 @@
                     padding-bottom: 10px;
                     position: relative;
                     background-color: #ffff;
-                    
+                    border-bottom:5px solid#F8F8F8;
+                                       
                     @include media('>tablet'){
                         width: 769;
                     }

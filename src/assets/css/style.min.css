@@ -490,7 +490,6 @@ input:focus {
   max-width: 769px;
 }
 .faq__wrapper .content .accordion {
-  background-color: #F8F8F8;
   max-width: 769px;
   display: flex;
   flex-direction: column;
@@ -508,6 +507,7 @@ input:focus {
   padding-bottom: 10px;
   position: relative;
   background-color: white;
+  border-bottom: 5px solid #F8F8F8;
 }
 @media (min-width: 769px) {
   .faq__wrapper .content .accordion .contentBox {
