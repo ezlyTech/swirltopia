@@ -9,10 +9,23 @@
 
     <body class="homepage" id="page-top">
       <main>
-        @@include("partials/fullbanner.html") @@include("general/footer.html")
+        <!-- @@include("general/header.html") -->
+
+        @@include("partials/two-column.html", {
+          "modifiers": "",
+          "has_btn": true,
+          "image-url": "assets/images/square.png",
+          "copy": {
+              "title": "MADE FROM 100% REAl fruit!",
+              "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat, augue ac ultricies viverra, nisl mi rutrum erat, vel molestie massa mi et purus. Nam diam purus, malesuada eget auctor eget, ultrices non ante. In sed condimentum ex, vel commodo arcu. <br><br> Nunc tincidunt imperdiet tellus, nec vestibulum lacus posuere vitae. Cras id urna dolor. Fusce pharetra euismod ante, eu molestie odio egestas a. Suspendisse fermentum est quam, ac convallis erat dapibus rutrum.",
+              "btn_text": "Learn More",
+          }
+        })
+        @@include("partials/full-width.html") 
+        @@include("partials/related-items.html") 
+        @@include("partials/products.html") 
+        
+        @@include("general/footer.html")
       </main>
 
-      @@include("general/end.html")
-    </body>
-  </head>
-</html>
+@@include("general/end.html")

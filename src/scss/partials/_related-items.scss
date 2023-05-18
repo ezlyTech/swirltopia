@@ -1,0 +1,105 @@
+.related-items {
+    padding-bottom: 90px;
+
+    &__heading {
+            text-align: center;
+            padding-top: 90px;
+            padding-bottom: 50px;
+
+            @include media('>tablet'){
+                padding-bottom: 87px;
+            }
+    }
+    
+        &__wrapper {
+            overflow: hidden;
+   
+            @include media('>tablet'){
+                padding-bottom: 160px;   
+                }
+
+            .container {
+                @include media('>tablet'){
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0;
+                    margin: 0;
+                }
+                .item {
+                        display: inline-block;
+                        @include media('>tablet'){
+                            vertical-align: top;
+                            list-style: none;
+                            margin-right: 146px;
+                        }
+                        
+                        .image {
+                            width: fit-content;
+                            margin-left: auto;
+                            margin-right: auto;
+                            img {
+                                
+                                max-width: 280px;
+                                height: 232px;
+                                object-fit: cover;
+                                border-radius: 12px;
+                            
+                            @include media('>tablet'){
+                                width: 100%;
+                                max-width: 364px;
+                                }
+                            }
+                        }
+            
+                        .content {
+                            font-weight: 500;
+                            max-width: 280px;
+                            display: block;
+                            margin-left: auto;
+                            margin-right: auto;
+                            padding-bottom: 40px;
+
+
+                            @include media('>tablet'){
+                                margin: 0;
+                            }
+
+                            .heading {
+                                padding-top: 23px;
+                                padding-bottom: 16px;
+                            }
+                            
+                            .text {
+                                
+                                @include media('>tablet'){
+                                    width: 364px;
+                                }
+                            }  
+                    }
+                }
+                .item:last-child {
+                    margin-right: 0;
+                }
+
+            }
+           
+        }
+}
+
+.splide {
+    &__arrow {
+        visibility: hidden;
+    }
+
+    &__pagination__page {
+        &.is-active {
+            background-color: #B24DC2;
+        }
+
+        width: 10px;
+        height: 10px;
+        margin: 0 5px;
+        border-radius: 50%;
+        background-color: #F8CBFF;
+      }
+}
