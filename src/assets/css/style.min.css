@@ -880,10 +880,9 @@ input:focus {
   height: 100%;
   position: relative;
 }
-
 .full .heroText {
   position: absolute;
   z-index: 200;
   padding-top: 10%;
-  padding-left: 10%;
+  padding-left: 7%;
 }
