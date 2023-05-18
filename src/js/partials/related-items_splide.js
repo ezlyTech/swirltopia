@@ -1,5 +1,5 @@
 document.addEventListener( 'DOMContentLoaded', function() {
-        var splide = new Splide( '.splide', {
+        var splide = new Splide( '.related-items__splide', {
             type    : 'carousel',
             perPage : 1,        
             autoplay: true,

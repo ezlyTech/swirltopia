@@ -1,7 +1,7 @@
-let parallax__description = document.getElementsByClassName('parallax__description');
+// let parallax__description = document.getElementsByClassName('parallax__description');
 
-window.addEventListener('scroll', () => {
-    let value = window.scrollY;
+// window.addEventListener('scroll', () => {
+//     let value = window.scrollY;
 
-    text.style.marginTop = value * 2.5 + 'px';
-});
+//     text.style.marginTop = value * 2.5 + 'px';
+// });

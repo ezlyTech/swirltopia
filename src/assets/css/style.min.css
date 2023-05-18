@@ -662,6 +662,104 @@ input:focus {
   bottom: -2rem;
 }
 
+.related-items {
+  padding-bottom: 90px;
+}
+.related-items__heading {
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 50px;
+}
+@media (min-width: 769px) {
+  .related-items__heading {
+    padding-bottom: 87px;
+  }
+}
+.related-items__wrapper {
+  overflow: hidden;
+}
+@media (min-width: 769px) {
+  .related-items__wrapper {
+    padding-bottom: 160px;
+  }
+}
+@media (min-width: 769px) {
+  .related-items__wrapper .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
+}
+.related-items__wrapper .container .item {
+  display: inline-block;
+}
+@media (min-width: 769px) {
+  .related-items__wrapper .container .item {
+    vertical-align: top;
+    list-style: none;
+    margin-right: 146px;
+  }
+}
+.related-items__wrapper .container .item .image {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.related-items__wrapper .container .item .image img {
+  max-width: 280px;
+  height: 232px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px;
+}
+@media (min-width: 769px) {
+  .related-items__wrapper .container .item .image img {
+    width: 100%;
+    max-width: 364px;
+  }
+}
+.related-items__wrapper .container .item .content {
+  font-weight: 500;
+  max-width: 280px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 40px;
+}
+@media (min-width: 769px) {
+  .related-items__wrapper .container .item .content {
+    margin: 0;
+  }
+}
+.related-items__wrapper .container .item .content .heading {
+  padding-top: 23px;
+  padding-bottom: 16px;
+}
+@media (min-width: 769px) {
+  .related-items__wrapper .container .item .content .text {
+    width: 364px;
+  }
+}
+.related-items__wrapper .container .item:last-child {
+  margin-right: 0;
+}
+
+.splide__arrow {
+  visibility: hidden;
+}
+.splide__pagination__page {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #F8CBFF;
+}
+.splide__pagination__page.is-active {
+  background-color: #B24DC2;
+}
+
 .faq__wrapper {
   display: flex;
   flex-direction: column;
