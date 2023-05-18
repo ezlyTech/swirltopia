@@ -1,5 +1,5 @@
 %svg-common {
-    background: url("../assets/images/sprite/sprite-1c338543.svg") no-repeat;
+    background: url("../assets/images/sprite/sprite-02583739.svg") no-repeat;
 }
 
 .svg-arrow-icon {
@@ -40,5 +40,15 @@
 .svg-header-logo-dims {
     width: 32px;
     height: 14.6px;
+}
+
+.svg-plus-icon {
+    @extend %svg-common;
+    background-position: 64% 34.76190476190476%;
+}
+
+.svg-plus-icon-dims {
+    width: 14px;
+    height: 14px;
 }
 

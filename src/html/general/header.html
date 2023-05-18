@@ -1,23 +1,10 @@
 <section class="header has-padding__bottom has-padding__top">
     <div class="inner-container">
         <div class="header__wrapper">
-            <h3>header!</h3>
-            <img src="assets/images/header-logo.png" alt="">
-            <svg class="burger-icon" role="image" title="image"><use href="assets/images/sprite.svg#hamburger-icon"/></svg>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quae quis quisquam nostrum sint doloremque!</p>
-
-            @@include("button.html", {
-                "modifiers": "",
-                "id": "",
-                "attr": '"',
-                "type": "primary",
-                "size": "",
-                "has_icon": true,
-                "copy": {
-                    "text": "Learn More",
-                    "url": "#"
-                }
-            })
+            <div class="header__logo">
+                <img src="assets/images/header-logo.png" alt="">
+            </div>
+            <svg role="image" title="image"><use href="assets/images/sprite.svg#hamburger-icon"/></svg>
         </div>
     </div>
 </section>

@@ -1,11 +1,19 @@
 .header {
-    background-color: rgb(249, 249, 249);
-
-    &.has-padding__bottom {
-        padding-bottom: 134px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
     }
 
-    &__wrapper {
-        background-color: $color-green;
+    &__logo {
+        max-width: 73px;
+
+        @include media('>tablet') {
+            max-width: 149px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
 }

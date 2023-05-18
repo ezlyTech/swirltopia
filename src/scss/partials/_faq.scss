@@ -1,0 +1,128 @@
+.faq{
+    
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        
+        @include media('>tablet') {
+            flex-direction: row;
+            gap: 80px;
+        }
+        
+        .image{
+
+            img{
+                position: relative;
+                width: 100%;
+                max-width: 713px;
+                max-height: 100%;
+            }     
+        }
+
+        .content{
+            position: relative;
+            max-width: 769px;
+            .accordion{
+                
+                max-width: 769px;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                @include media('>tablet') {
+                    flex-direction: column;
+                    gap: 10px;
+                }
+                .contentBox{
+                    max-width: 769px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    position: relative;
+                    background-color: #ffff;
+                    border-bottom:5px solid#F8F8F8;
+                                       
+                    @include media('>tablet'){
+                        width: 769;
+                    }
+                    
+                    .label{
+                        max-width: 729px;
+                        position: relative;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        cursor: pointer;
+
+                        h5{
+                            color: #373737;
+                        }
+                        &:hover{
+
+                            h5{
+                                color: #B24DC2;
+                            }
+                        }
+
+                        svg{
+                            position: absolute;
+                            width: 15.63px;
+                            height: 15.63px;
+                            top: 26.46%;
+                            left: 97.5%;
+                            bottom: 28.93%;
+                            transition: 0.5s;
+
+                            @include media('>tablet'){
+                                position: absolute;
+                                left: 120%;
+                            }
+                        }
+                    }
+
+                    .panel{
+                        position: relative;
+                        max-width: 725px;
+                        height: 0;
+                        overflow: hidden;
+                        transition: 0.5s;
+                        overflow-y: auto;
+                        
+                        p{
+                            color: #373737;
+                            @include media('>tablet'){
+                                    font-size: 24px;
+                            }
+                        }
+                    }
+
+                    &.active{
+                        .label{
+                            position: relative;
+                            max-width: 729px;
+                            cursor: pointer;
+
+                            h5{
+                                color: #B24DC2;
+                            }
+
+                            svg{
+                                transform: rotate(-45deg);
+                                transition: 0.5s;
+                            }
+                        }
+
+                        .panel{
+                            max-width: 725px;
+                            height: 150px;
+                            p{
+                                color: #373737;
+                                @include media('>tablet'){
+                                        font-size: 24px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

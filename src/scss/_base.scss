@@ -11,10 +11,12 @@
 @import 'utilities/fonts';
 
 /* PARTIAL COMPONENTS */
+@import "partials/full-width";
 @import "partials/splide-test";
 @import "partials/two-column";
 @import "partials/products";
 @import "partials/aileen";
+@import "partials/faq";
 
 /*! critical:start */
 html, body, div, span, applet, object, iframe,
