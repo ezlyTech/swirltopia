@@ -1,10 +1,3 @@
-console.log('test');
-
-window.addEventListener('scroll', () => {
-    let value = window.scrollY;
-
-    text.style.marginTop = value * 2.5 + 'px';
-});
 document.addEventListener('DOMContentLoaded', function() {
     var splides = document.querySelectorAll('.splide');
     for (var i = 0; i < splides.length; i++) {
