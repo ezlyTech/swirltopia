@@ -1,0 +1,89 @@
+.parallax {
+    background: linear-gradient(to right, #EBC773 0%, #CB9732 100%);
+    position: relative;
+    height: 100vh;
+    align-items: center;
+    // vertical-align: auto;
+    z-index: 0;
+
+    &__images {
+        height: 49%;
+        width: 40%;
+        left: 55px;
+        z-index: 100;
+        // position:static;
+        // vertical-align: middle;
+        // zoom: inherit;
+        // align-items: center;
+        // align-self: center;
+
+        @include media('<tablet', ) {
+            position: absolute;
+            height: 502px;
+            width: 320px;
+            top: 228px;
+        }
+
+    }
+
+    &__vector {
+        position: absolute;
+        height: 25%;
+        width: 15;
+        top: 10%;
+        right: 3%;
+
+        @include media('<tablet') {
+            display: none;
+        }
+    }
+
+    &__vector1 {
+        position: absolute;
+        height: 8%;
+        width: 3%;
+        top: 25%;
+        right: 15%;
+
+        @include media('<tablet') {
+            display: none;
+        }
+    }
+
+    &__description {
+        color: #ffffff;
+        width: 900px;
+        height: 300px;
+        font-size: 80px;
+        line-height: 76px;
+        line-height: 94%;
+        vertical-align: top;
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        height: 100vh;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+        overflow: hidden;
+        background-image: none;
+
+        .parallax__description-span {
+            @include media('<tablet') {
+                display: block;
+                opacity: 0;
+            }
+        }
+
+        @include media('<tablet') {
+            font-size: 36px;
+            line-height: 39px;
+            line-height: 109%;
+            vertical-align: top;
+            text-align: center;
+            width: 192px;
+            height: 117px;
+            top: 90px;  
+            left: 100px;
+        }
+
+    }
+}
