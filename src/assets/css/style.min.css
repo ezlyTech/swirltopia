@@ -798,8 +798,8 @@ input:focus {
   padding-top: 10px;
   padding-bottom: 10px;
   position: relative;
-  background-color: white;
-  border-bottom: 5px solid #F8F8F8;
+  background-color: #FFFFFF;
+  border-bottom: 3px solid #F8F8F8;
 }
 @media (min-width: 769px) {
   .faq__wrapper .content .accordion .contentBox {
@@ -828,19 +828,12 @@ input:focus {
   bottom: 28.93%;
   transition: 0.5s;
 }
-@media (min-width: 769px) {
-  .faq__wrapper .content .accordion .contentBox .label svg {
-    position: absolute;
-    left: 120%;
-  }
-}
 .faq__wrapper .content .accordion .contentBox .panel {
   position: relative;
   max-width: 725px;
   height: 0;
   overflow: hidden;
   transition: 0.5s;
-  overflow-y: auto;
 }
 .faq__wrapper .content .accordion .contentBox .panel p {
   color: #373737;
@@ -865,6 +858,7 @@ input:focus {
 .faq__wrapper .content .accordion .contentBox.active .panel {
   max-width: 725px;
   height: 150px;
+  overflow: hidden;
 }
 .faq__wrapper .content .accordion .contentBox.active .panel p {
   color: #373737;
