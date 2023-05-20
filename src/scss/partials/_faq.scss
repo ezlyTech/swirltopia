@@ -24,6 +24,9 @@
             position: relative;
             max-width: 769px;
             
+            h4{
+                padding-bottom: 15px;
+            }
             .accordion{
                 max-width: 769px;
                 display: flex;
@@ -32,6 +35,9 @@
                 @include media('>tablet') {
                     flex-direction: column;
                     gap: 10px;
+                }
+                #first{
+                    border-top:3px solid $color-grey;
                 }
                 .contentBox{
                     max-width: 769px;

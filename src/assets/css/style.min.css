@@ -781,6 +781,9 @@ input:focus {
   position: relative;
   max-width: 769px;
 }
+.faq__wrapper .content h4 {
+  padding-bottom: 15px;
+}
 .faq__wrapper .content .accordion {
   max-width: 769px;
   display: flex;
@@ -792,6 +795,9 @@ input:focus {
     flex-direction: column;
     gap: 10px;
   }
+}
+.faq__wrapper .content .accordion #first {
+  border-top: 3px solid #F8F8F8;
 }
 .faq__wrapper .content .accordion .contentBox {
   max-width: 769px;
