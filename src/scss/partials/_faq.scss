@@ -23,8 +23,11 @@
         .content{
             position: relative;
             max-width: 769px;
+            
+            h4{
+                padding-bottom: 15px;
+            }
             .accordion{
-                
                 max-width: 769px;
                 display: flex;
                 flex-direction: column;
@@ -33,13 +36,16 @@
                     flex-direction: column;
                     gap: 10px;
                 }
+                #first{
+                    border-top:3px solid $color-grey;
+                }
                 .contentBox{
                     max-width: 769px;
                     padding-top: 10px;
                     padding-bottom: 10px;
                     position: relative;
-                    background-color: #ffff;
-                    border-bottom:5px solid#F8F8F8;
+                    background-color: $color-white;
+                    border-bottom:3px solid $color-grey;
                                        
                     @include media('>tablet'){
                         width: 769;
@@ -53,12 +59,12 @@
                         cursor: pointer;
 
                         h5{
-                            color: #373737;
+                            color: $color-secondary;
                         }
                         &:hover{
 
                             h5{
-                                color: #B24DC2;
+                                color: $color-primary;
                             }
                         }
 
@@ -71,10 +77,6 @@
                             bottom: 28.93%;
                             transition: 0.5s;
 
-                            @include media('>tablet'){
-                                position: absolute;
-                                left: 120%;
-                            }
                         }
                     }
 
@@ -84,10 +86,9 @@
                         height: 0;
                         overflow: hidden;
                         transition: 0.5s;
-                        overflow-y: auto;
                         
                         p{
-                            color: #373737;
+                            color: $color-secondary;
                             @include media('>tablet'){
                                     font-size: 24px;
                             }
@@ -101,7 +102,7 @@
                             cursor: pointer;
 
                             h5{
-                                color: #B24DC2;
+                                color: $color-primary;
                             }
 
                             svg{
@@ -113,8 +114,9 @@
                         .panel{
                             max-width: 725px;
                             height: 150px;
+                            overflow: hidden;
                             p{
-                                color: #373737;
+                                color: $color-secondary;
                                 @include media('>tablet'){
                                         font-size: 24px;
                                 }
