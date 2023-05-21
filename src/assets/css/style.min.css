@@ -781,7 +781,7 @@ input:focus {
   position: relative;
   max-width: 769px;
 }
-.faq__wrapper .content h4 {
+.faq__wrapper .content .title {
   padding-bottom: 15px;
 }
 .faq__wrapper .content .accordion {
@@ -819,10 +819,10 @@ input:focus {
   padding-bottom: 10px;
   cursor: pointer;
 }
-.faq__wrapper .content .accordion .contentBox .label h5 {
+.faq__wrapper .content .accordion .contentBox .label .question {
   color: #373737;
 }
-.faq__wrapper .content .accordion .contentBox .label:hover h5 {
+.faq__wrapper .content .accordion .contentBox .label:hover .question {
   color: #B24DC2;
 }
 .faq__wrapper .content .accordion .contentBox .label svg {
@@ -854,7 +854,7 @@ input:focus {
   max-width: 729px;
   cursor: pointer;
 }
-.faq__wrapper .content .accordion .contentBox.active .label h5 {
+.faq__wrapper .content .accordion .contentBox.active .label .question {
   color: #B24DC2;
 }
 .faq__wrapper .content .accordion .contentBox.active .label svg {
