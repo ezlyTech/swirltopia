@@ -24,7 +24,7 @@
             position: relative;
             max-width: 769px;
             
-            h4{
+            .title{
                 padding-bottom: 15px;
             }
             .accordion{
@@ -58,12 +58,12 @@
                         padding-bottom: 10px;
                         cursor: pointer;
 
-                        h5{
+                        .question{
                             color: $color-secondary;
                         }
                         &:hover{
 
-                            h5{
+                            .question{
                                 color: $color-primary;
                             }
                         }
@@ -101,7 +101,7 @@
                             max-width: 729px;
                             cursor: pointer;
 
-                            h5{
+                            .question{
                                 color: $color-primary;
                             }
 
