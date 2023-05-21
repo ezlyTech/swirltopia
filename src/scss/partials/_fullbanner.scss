@@ -1,18 +1,76 @@
 .full {
-    max-width: 100%;
-    height: 100%;
     position: relative;
-    .heroText {
+
+
+        @include media('>tablet') { 
+        max-width: 100%;
+        height: 100%;
+        }
+
+
+    
+    &__heroText {
         position: absolute;
         z-index: 200;
-        padding-top: 10%;
-        padding-left: 7%;
-    }
-    &__heroText{
+        margin: 15%;
+        margin-top: 40%;
+        margin-left: 20px;
+        width: 350px;
         
+        @include media('>tablet') { 
+            margin: 10%;
+            margin-top: 13%;
+            width: 50%;
+          }
     }
+
     &__title{
-        
+       
     }
+    &__para{
+        padding-top: 16px;
+        @include media('>tablet') { 
+            padding-top: 40px;
+          }
+        .p1{
+            padding-bottom: 6px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 109.1%;
+            @include media('>tablet') { 
+                padding-bottom: 16px;
+              }
+        }
+       
+    }
+    &__p2{
+        padding-right: -200px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 35px;
+        width: 69%;
+        @include media('>tablet') { 
+            width: 50%;
+          }
+    }
+
+    &__img{
+        width: 580px;
+        height: 540px;
+        @include media('>tablet') { 
+            width: 100%;
+            height: 100%;
+          }
+    }
+
+    &__icons{
+
+    }
+
+ 
+
 }
+
  

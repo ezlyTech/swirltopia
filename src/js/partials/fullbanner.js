@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         options.arrows = false;
         options.type = 'fade';
 	      options.autoplay = true;
-        options.interval = 3500;
+        options.interval = 2000;
         options.wheel = false;
         options.rewind = true;
         options.pauseOnHover = false;
